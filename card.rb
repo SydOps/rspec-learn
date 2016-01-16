@@ -35,7 +35,7 @@ RSpec.describe 'a playing card' do
       raise unless higher.rank > lower.rank        
     end
 
-    it 'ranks higher than a 12' do
+    it 'ranks lower than a 12' do
       lower = Card.new(suit: :spades, rank: 12)
       higher = Card.new(suit: :spades, rank: :jack)
 
